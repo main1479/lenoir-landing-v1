@@ -1,0 +1,29 @@
+.header {
+	margin-top: 8rem;
+	padding: 10rem 0;
+	background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url(../img/header-bg.png);
+	min-height: 77rem;
+	background-size: cover;
+	background-position: center center;
+	display: flex;
+	align-items: center;
+	@media only screen and (max-width: $tab-land) {
+		background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(../img/header-bg.png);
+		background-position: center center;
+		text-align: center;
+	}
+	.btns__box {
+		display: flex;
+		gap: 5rem;
+		@media only screen and (max-width: $tab-land) {
+			max-width: 19rem;
+			margin: 0 auto;
+			flex-direction: column;
+			gap: 2rem;
+		}
+	}
+
+	// .header__col {
+	// 	padding-left: 4rem;
+	// }
+}
